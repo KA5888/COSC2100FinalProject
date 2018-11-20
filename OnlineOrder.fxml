@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.Controller">
+	<children>
+		<ImageView fitHeight="30.0" fitWidth="35.0" layoutX="554.0"
+			layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@../../../Users/KevenLeng/Pictures/Search.png" />
+			</image>
+		</ImageView>
+		<Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0"
+			layoutY="2.0" mnemonicParsing="false" onAction="#toHome"
+			style="-fx-background-color: transparent;" text="Button">
+			<graphic>
+				<ImageView fitHeight="59.0" fitWidth="45.0"
+					pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../Users/KevenLeng/Pictures/Logo.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+		<Button layoutX="481.0" layoutY="20.0" mnemonicParsing="false"
+			onAction="#toLogin" prefHeight="30.0" prefWidth="67.0" text="Log in ">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Button>
+		<Label alignment="CENTER" layoutX="168.0" layoutY="20.0"
+			text="Advisor" textFill="#0cd2f5">
+			<font>
+				<Font size="20.0" />
+			</font>
+			<opaqueInsets>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</opaqueInsets>
+		</Label>
+		<Label layoutX="73.0" layoutY="20.0" text="Restaurant">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Line endX="50.0" layoutX="528.0" layoutY="36.0" rotate="90.0"
+			strokeWidth="2.0" />
+		<Line endX="600.0" endY="70.0" startY="70.0" strokeWidth="2.0" />
+		<TabPane layoutX="83.0" layoutY="118.0" prefHeight="298.0"
+			prefWidth="436.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="Appetizer">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView layoutX="5.0" layoutY="5.0"
+									prefHeight="259.0" prefWidth="426.0">
+									<columns>
+										<TableColumn editable="false" prefWidth="84.0"
+											text="Image" />
+										<TableColumn editable="false" prefWidth="84.0"
+											text="Name" />
+										<TableColumn editable="false" prefWidth="90.0"
+											sortable="false" text="Select" />
+										<TableColumn prefWidth="82.0" text="Number" />
+										<TableColumn editable="false" prefWidth="85.0"
+											text="Price" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Entree">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView layoutX="5.0" layoutY="5.0"
+									prefHeight="259.0" prefWidth="426.0">
+									<columns>
+										<TableColumn editable="false" prefWidth="84.0"
+											text="Image" />
+										<TableColumn editable="false" prefWidth="84.0"
+											text="Name" />
+										<TableColumn editable="false" prefWidth="90.0"
+											sortable="false" text="Select" />
+										<TableColumn prefWidth="82.0" text="Number" />
+										<TableColumn editable="false" prefWidth="85.0"
+											text="Price" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Drink">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView layoutX="5.0" layoutY="5.0"
+									prefHeight="259.0" prefWidth="426.0">
+									<columns>
+										<TableColumn editable="false" prefWidth="84.0"
+											text="Image" />
+										<TableColumn editable="false" prefWidth="84.0"
+											text="Name" />
+										<TableColumn editable="false" prefWidth="90.0"
+											sortable="false" text="Select" />
+										<TableColumn prefWidth="82.0" text="Number" />
+										<TableColumn editable="false" prefWidth="85.0"
+											text="Price" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Dessert">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView layoutX="5.0" layoutY="5.0"
+									prefHeight="259.0" prefWidth="426.0">
+									<columns>
+										<TableColumn editable="false" prefWidth="84.0"
+											text="Image" />
+										<TableColumn editable="false" prefWidth="84.0"
+											text="Name" />
+										<TableColumn editable="false" prefWidth="90.0"
+											sortable="false" text="Select" />
+										<TableColumn prefWidth="82.0" text="Number" />
+										<TableColumn editable="false" prefWidth="85.0"
+											text="Price" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+		<Label layoutX="83.0" layoutY="82.0" text="Menu">
+			<font>
+				<Font size="25.0" />
+			</font>
+		</Label>
+		<Label layoutX="217.0" layoutY="418.0" text="Tax: ">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Button layoutX="327.0" layoutY="419.0" mnemonicParsing="false"
+			text="Confirm Order" />
+		<Button layoutX="433.0" layoutY="419.0" mnemonicParsing="false"
+			text="Cancel Order" />
+		<Label layoutX="202.0" layoutY="444.0" text="Total: ">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="251.0" layoutY="446.0" text="\$21.80">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="251.0" layoutY="419.0" text="\$1.04">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>

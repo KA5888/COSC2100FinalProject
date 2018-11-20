@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	<center>
+		<VBox BorderPane.alignment="CENTER">
+			<children>
+				<ImageView fitHeight="88.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../Users/KevenLeng/Pictures/Logo.png" />
+					</image>
+					<VBox.margin>
+						<Insets left="80.0" right="80.0" />
+					</VBox.margin>
+				</ImageView>
+				<HBox>
+					<children>
+						<Label text="Restaurant">
+							<font>
+								<Font size="26.0" />
+							</font>
+						</Label>
+						<Label text="Advisor" textFill="#0efffb">
+							<font>
+								<Font size="26.0" />
+							</font>
+						</Label>
+					</children>
+					<opaqueInsets>
+						<Insets />
+					</opaqueInsets>
+					<padding>
+						<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+					</padding>
+				</HBox>
+				<TextField maxWidth="230.0" prefWidth="230.0" promptText="Username ">
+					<VBox.margin>
+						<Insets bottom="10.0" />
+					</VBox.margin>
+				</TextField>
+				<TextField maxWidth="230.0" prefWidth="230.0" promptText="Email" />
+				<HBox>
+					<children>
+						<TextField prefHeight="25.0" prefWidth="230.0" promptText="Password">
+							<opaqueInsets>
+								<Insets />
+							</opaqueInsets>
+							<HBox.margin>
+								<Insets bottom="10.0" top="10.0" />
+							</HBox.margin>
+						</TextField>
+						<ImageView fitHeight="25.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../../../Users/KevenLeng/Pictures/show_hide_password-10-512.png" />
+							</image>
+							<HBox.margin>
+								<Insets top="10.0" />
+							</HBox.margin>
+						</ImageView>
+					</children>
+				</HBox>
+				<TextField maxWidth="230.0" prefWidth="230.0" promptText="Retype Password" />
+				<Button mnemonicParsing="false" prefHeight="25.0" prefWidth="229.0" text="Sign Up">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+				<HBox>
+					<children>
+                  <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toHome" style="-fx-background-color: transparent;" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Users/KevenLeng/Pictures/Home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+						<Label text="Back to Home Page">
+							<padding>
+								<Insets top="10.0" />
+							</padding>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+						</Label>
+					</children>
+				</HBox>
+			</children>
+			<BorderPane.margin>
+				<Insets />
+			</BorderPane.margin>
+			<padding>
+				<Insets bottom="50.0" left="150.0" right="150.0" top="50.0" />
+			</padding>
+		</VBox>
+	</center>
+	<left>
+		<Region BorderPane.alignment="CENTER" />
+	</left>
+	<right>
+		<Region BorderPane.alignment="CENTER" />
+	</right>
+</BorderPane>

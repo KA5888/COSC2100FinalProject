@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	<children>
+		<Button layoutX="481.0" layoutY="20.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="30.0" prefWidth="67.0" text="Log in ">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</Button>
+		<Label alignment="CENTER" layoutX="168.0" layoutY="20.0" text="Advisor" textFill="#0cd2f5">
+			<font>
+				<Font size="20.0" />
+			</font>
+			<opaqueInsets>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</opaqueInsets>
+		</Label>
+		<Label layoutX="73.0" layoutY="20.0" text="Restaurant">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Line endX="50.0" layoutX="528.0" layoutY="36.0" rotate="90.0" strokeWidth="2.0" />
+		<Line endX="600.0" endY="70.0" startY="70.0" strokeWidth="2.0" />
+		<Label layoutX="44.0" layoutY="104.0" text="How Restaurant" textFill="#101111">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="157.0" layoutY="104.0" text="Advisor" textFill="#0cd2f5">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="214.0" layoutY="104.0" text="works" textFill="#101111">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="66.0" layoutY="161.0" text="Step 1">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="278.0" layoutY="161.0" text="Step 3">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="469.0" layoutY="161.0" text="Step 3">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="63.0" layoutY="186.0" text="Browse">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="278.0" layoutY="186.0" text="Order">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="469.0" layoutY="186.0" text="Enjoy">
+			<font>
+				<Font size="16.0" />
+			</font>
+		</Label>
+		<Label layoutX="36.0" layoutY="211.0" prefWidth="150.0" text=" Scroll through the restaurant browser and select whichever restaurant piques your interests. When you find something you like click on it, and it will bring you to the retaurants page." wrapText="true" />
+		<Label layoutX="226.0" layoutY="211.0" prefWidth="150.0" text="Once you are ready to order go to the online order page and select the food items you want. It will tell you the tax and total price of your order. Once your ready click on the confirm order button." wrapText="true" />
+		<Label layoutX="417.0" layoutY="211.0" prefWidth="150.0" text="That's it! Now just sit back and relax, your food will be there shortly" wrapText="true" />
+		<ImageView fitHeight="150.0" fitWidth="167.0" layoutX="17.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+		<ImageView fitHeight="150.0" fitWidth="167.0" layoutX="217.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true" />
+		<ImageView fitHeight="150.0" fitWidth="167.0" layoutX="409.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" />
+		<Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toHome" style="-fx-background-color: transparent;" text="Button">
+			<graphic>
+				<ImageView fitHeight="59.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../Users/KevenLeng/Pictures/Logo.png" />
+					</image>
+				</ImageView>
+			</graphic>
+		</Button>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="561.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Users/KevenLeng/Pictures/Search.png" />
+         </image>
+      </ImageView>
+	</children>
+</AnchorPane>

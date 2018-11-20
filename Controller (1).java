@@ -60,7 +60,7 @@ public class Controller implements Initializable {
 		stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 		Parent root;
 		try {
-			root = FXMLLoader.load(getClass().getResource("/HomePage.fxml"));
+			root = FXMLLoader.load(getClass().getResource("/Home.fxml"));
 			stage.setScene(new Scene(root, 600, 500));
 		} catch (IOException e) {
 			e.printStackTrace();
