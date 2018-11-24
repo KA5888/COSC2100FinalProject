@@ -45,7 +45,6 @@
 						<Insets bottom="10.0" />
 					</VBox.margin>
 				</TextField>
-				<TextField maxWidth="230.0" prefWidth="230.0" promptText="Email" />
 				<HBox>
 					<children>
 						<TextField prefHeight="25.0" prefWidth="230.0" promptText="Password">
