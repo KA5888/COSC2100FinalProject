@@ -45,15 +45,19 @@
 		</Label>
 		<Line endX="50.0" layoutX="528.0" layoutY="36.0" rotate="90.0" strokeWidth="2.0" />
 		<Line endX="600.0" endY="70.0" startY="70.0" strokeWidth="2.0" />
-		<ImageView fitHeight="36.0" fitWidth="36.0" layoutX="530.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
-			<image>
-				<Image url="@/Search.png" />
-			</image>
-		</ImageView>
+      <Button contentDisplay="GRAPHIC_ONLY" layoutX="525.0" layoutY="131.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: transparent;">
+         <graphic>
+      		<ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+      			<image>
+      				<Image url="@/Search.png" />
+      			</image>
+      		</ImageView>
+         </graphic>
+      </Button>
 		<Button id="tutorialButton" layoutX="14.0" layoutY="98.0" mnemonicParsing="false" onAction="#toTutorial" styleClass="buttonStand" stylesheets="@application/application.css" text="How to Use" />
 		<Button layoutX="107.0" layoutY="98.0" mnemonicParsing="false" onAction="#toLocation" styleClass="buttonStand" stylesheets="@application/application.css" text="Find Near Me" />
-		<ChoiceBox layoutX="481.0" layoutY="140.0" />
-		<TextField layoutX="33.0" layoutY="140.0" prefHeight="25.0" prefWidth="449.0" promptText="Search Restaurant" />
+		<ChoiceBox fx:id="Genre" layoutX="443.0" layoutY="140.0" />
+		<TextField fx:id="searchBar" layoutX="33.0" layoutY="140.0" prefHeight="25.0" prefWidth="408.0" promptText="Search Restaurant" />
 		<TableView fx:id="homeTable" layoutX="33.0" layoutY="170.0" prefHeight="318.0" prefWidth="534.0" stylesheets="@application/application.css">
 			<columns>
 				<TableColumn fx:id="NameC" editable="false" prefWidth="113.0" text="Name" />
