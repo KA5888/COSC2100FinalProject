@@ -92,7 +92,7 @@
 				</Button>
 				<BarChart fx:id="ReviewChart" layoutX="52.0" layoutY="400.0" prefHeight="421.0" prefWidth="516.0" rotate="90.0" scaleX="0.5">
 					<xAxis>
-						<CategoryAxis fx:id="rating" gapStartAndEnd="false" label="Rating" tickLabelsVisible="false" tickMarkVisible="false">
+						<CategoryAxis fx:id="rating" gapStartAndEnd="false" maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="200.0" prefHeight="30.0" prefWidth="30.0" tickMarkVisible="false">
 							<opaqueInsets>
 								<Insets />
 							</opaqueInsets>
