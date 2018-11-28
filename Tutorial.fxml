@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
 	<children>
-		<Button layoutX="481.0" layoutY="20.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="30.0" prefWidth="67.0" text="Log in ">
+		<Button layoutX="481.0" layoutY="20.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="30.0" prefWidth="67.0" styleClass="buttonStand" stylesheets="@application/application.css" text="Log in ">
 			<font>
 				<Font size="14.0" />
 			</font>

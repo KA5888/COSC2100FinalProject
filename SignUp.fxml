@@ -8,13 +8,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<BorderPane styleClass="bodyBackground" stylesheets="@application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
 	<center>
-		<VBox BorderPane.alignment="CENTER">
+		<VBox styleClass="bodyBackground" stylesheets="@application/application.css" BorderPane.alignment="CENTER">
 			<children>
 				<ImageView fitHeight="88.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
 					<image>
-						<Image url="@../../../../Users/KevenLeng/Pictures/Logo.png" />
+						<Image url="@/Logo.png" />
 					</image>
 					<VBox.margin>
 						<Insets left="80.0" right="80.0" />
@@ -57,7 +57,7 @@
 						</TextField>
 						<ImageView fitHeight="25.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
 							<image>
-								<Image url="@../../../Users/KevenLeng/Pictures/show_hide_password-10-512.png" />
+								<Image url="@/hidePassword.png" />
 							</image>
 							<HBox.margin>
 								<Insets top="10.0" />
@@ -66,28 +66,29 @@
 					</children>
 				</HBox>
 				<TextField maxWidth="230.0" prefWidth="230.0" promptText="Retype Password" />
-				<Button mnemonicParsing="false" prefHeight="25.0" prefWidth="229.0" text="Sign Up">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin></Button>
+				<Button mnemonicParsing="false" prefHeight="25.0" prefWidth="229.0" styleClass="buttonStand" stylesheets="@application/application.css" text="Sign Up">
+					<VBox.margin>
+						<Insets top="10.0" />
+					</VBox.margin>
+				</Button>
 				<HBox>
 					<children>
-                  <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toHome" style="-fx-background-color: transparent;" text="Button">
-                     <graphic>
-                        <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../Users/KevenLeng/Pictures/Home.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
+						<Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toHome" style="-fx-background-color: transparent;" text="Button">
+							<graphic>
+								<ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+									<image>
+										<Image url="@/Home.png" />
+									</image>
+								</ImageView>
+							</graphic>
+						</Button>
 						<Label text="Back to Home Page">
 							<padding>
 								<Insets top="10.0" />
 							</padding>
-                     <HBox.margin>
-                        <Insets top="5.0" />
-                     </HBox.margin>
+							<HBox.margin>
+								<Insets top="5.0" />
+							</HBox.margin>
 						</Label>
 					</children>
 				</HBox>
@@ -101,9 +102,9 @@
 		</VBox>
 	</center>
 	<left>
-		<Region BorderPane.alignment="CENTER" />
+		<Region styleClass="bodyBackground" stylesheets="@application/application.css" BorderPane.alignment="CENTER" />
 	</left>
 	<right>
-		<Region BorderPane.alignment="CENTER" />
+		<Region styleClass="bodyBackground" stylesheets="@application/application.css" BorderPane.alignment="CENTER" />
 	</right>
 </BorderPane>

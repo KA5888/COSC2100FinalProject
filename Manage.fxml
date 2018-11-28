@@ -9,24 +9,19 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="500.0" prefWidth="600.0"
-	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-	fx:controller="application.Controller">
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
 	<children>
-		<ImageView fitHeight="30.0" fitWidth="35.0" layoutX="554.0"
-			layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+		<ImageView fitHeight="30.0" fitWidth="35.0" layoutX="554.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
 			<image>
-				<Image url="@../../../Users/KevenLeng/Pictures/Search.png" />
+				<Image url="@/Search.png" />
 			</image>
 		</ImageView>
-		<Button layoutX="481.0" layoutY="20.0" mnemonicParsing="false"
-			onAction="#toLogin" prefHeight="30.0" prefWidth="67.0" text="Log in ">
+		<Button layoutX="481.0" layoutY="20.0" mnemonicParsing="false" onAction="#toLogin" prefHeight="30.0" prefWidth="67.0" styleClass="buttonStand" stylesheets="@application/application.css" text="Log in ">
 			<font>
 				<Font size="14.0" />
 			</font>
 		</Button>
-		<Label alignment="CENTER" layoutX="168.0" layoutY="20.0"
-			text="Advisor" textFill="#0cd2f5">
+		<Label alignment="CENTER" layoutX="168.0" layoutY="20.0" text="Advisor" textFill="#0cd2f5">
 			<font>
 				<Font size="20.0" />
 			</font>
@@ -39,38 +34,29 @@
 				<Font size="20.0" />
 			</font>
 		</Label>
-		<Line endX="50.0" layoutX="528.0" layoutY="36.0" rotate="90.0"
-			strokeWidth="2.0" />
+		<Line endX="50.0" layoutX="528.0" layoutY="36.0" rotate="90.0" strokeWidth="2.0" />
 		<Line endX="600.0" endY="70.0" startY="70.0" strokeWidth="2.0" />
-		<Label layoutX="52.0" layoutY="101.0" text="Restaurants Manager"
-			textFill="#09d8f8">
+		<Label layoutX="52.0" layoutY="101.0" text="Restaurants Manager" textFill="#09d8f8">
 			<font>
 				<Font size="16.0" />
 			</font>
 		</Label>
-		<Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0"
-			layoutY="2.0" mnemonicParsing="false" onAction="#toHome"
-			style="-fx-background-color: transparent;" text="Button">
+		<Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="2.0" mnemonicParsing="false" onAction="#toHome" style="-fx-background-color: transparent;" text="Button">
 			<graphic>
-				<ImageView fitHeight="59.0" fitWidth="45.0"
-					pickOnBounds="true" preserveRatio="true">
+				<ImageView fitHeight="59.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
 					<image>
-						<Image url="@../../../Users/KevenLeng/Pictures/Logo.png" />
+						<Image url="@/Logo.png" />
 					</image>
 				</ImageView>
 			</graphic>
 		</Button>
-		<Button layoutX="53.0" layoutY="137.0" mnemonicParsing="false"
-			text="Create New" />
-		<TableView layoutX="53.0" layoutY="179.0" prefHeight="242.0"
-			prefWidth="521.0">
+		<Button layoutX="53.0" layoutY="137.0" mnemonicParsing="false" styleClass="buttonStand" stylesheets="@application/application.css" text="Create New" />
+		<TableView layoutX="53.0" layoutY="179.0" prefHeight="242.0" prefWidth="521.0" stylesheets="@application/application.css">
 			<columns>
 				<TableColumn prefWidth="520.0" text="C1" />
 			</columns>
 		</TableView>
-		<Button layoutX="463.0" layoutY="421.0" mnemonicParsing="false"
-			text="Edit" />
-		<Button layoutX="523.0" layoutY="421.0" mnemonicParsing="false"
-			text="Delete" />
+		<Button layoutX="463.0" layoutY="421.0" mnemonicParsing="false" styleClass="buttonStand" stylesheets="@application/application.css" text="Edit" />
+		<Button layoutX="523.0" layoutY="421.0" mnemonicParsing="false" styleClass="buttonStand" stylesheets="@application/application.css" text="Delete" />
 	</children>
 </AnchorPane>

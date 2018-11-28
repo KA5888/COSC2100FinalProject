@@ -16,7 +16,7 @@
 		<ImageView fitHeight="30.0" fitWidth="35.0" layoutX="554.0"
 			layoutY="20.0" pickOnBounds="true" preserveRatio="true">
 			<image>
-				<Image url="@../../../Users/KevenLeng/Pictures/Search.png" />
+				<Image url="@/Search.png" />
 			</image>
 		</ImageView>
 		<Button layoutX="481.0" layoutY="20.0" mnemonicParsing="false"
@@ -48,7 +48,7 @@
 		<ImageView fitHeight="36.0" fitWidth="36.0" layoutX="503.0"
 			layoutY="83.0" pickOnBounds="true" preserveRatio="true">
 			<image>
-				<Image url="@../../../Users/KevenLeng/Pictures/Search.png" />
+				<Image url="@/Search.png" />
 			</image>
 		</ImageView>
 		<Button contentDisplay="GRAPHIC_ONLY" layoutX="10.0"
@@ -58,7 +58,7 @@
 				<ImageView fitHeight="59.0" fitWidth="45.0"
 					pickOnBounds="true" preserveRatio="true">
 					<image>
-						<Image url="@../../../Users/KevenLeng/Pictures/Logo.png" />
+						<Image url="@/Logo.png" />
 					</image>
 				</ImageView>
 			</graphic>
